@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 20px;
+}
+
+table {
+    margin-top: 30px;
+    border: 0;
+}
+
+table th {
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+table tr td {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+table tr:hover td {
+    background-color: rgb(136, 191, 191);
+    /* color: #fff; */
+}
+
+table tr td 
+.color-edit, 
+.color-del {
+    font-size: 1.3rem;
+    margin: 0.2rem 1rem;
+    padding: 0.2rem;
+}
+
+table tr td .color-edit {
+    color: #0000ff;
+}
+
+table tr td .color-del {
+    color: #ff0000;
+}

@@ -2,7 +2,7 @@
 
 <a href="<?=$base;?>/novo">Novo Usuário</a>
 
-<table border="1" width="100%">
+<table  width="100%">
     <thead>
         <tr>
             <th>ID</th>
@@ -18,8 +18,8 @@
                 <td><?=$usuario['name']; ?></td>
                 <td><?=$usuario['email']; ?></td>
                 <td>
-                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/editar">[ Editar ]</a>
-                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/excluir" onclick="return confirm('Deseja realmente excluir o usuário?')">[ Excluir ]</a>
+                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/editar"><i class="fas fa-user-edit color-edit"></i></a>
+                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/excluir" onclick="return confirm('Deseja realmente excluir o usuário?')"><i class="fas fa-trash-alt color-del"></i></a>
                 </td>
             </tr>
         <?php endforeach ?>
