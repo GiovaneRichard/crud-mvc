@@ -18,8 +18,8 @@
                 <td><?=$usuario['name']; ?></td>
                 <td><?=$usuario['email']; ?></td>
                 <td>
-                    <a href=<?= ?>">[ Editar ]</a>
-                    <a href="">[ Excluir ]</a>
+                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/editar">[ Editar ]</a>
+                    <a href="<?=$base?>/usuario/<?=$usuario['id']; ?>/excluir" onclick="return confirm('Deseja realmente excluir o usuário?')">[ Excluir ]</a>
                 </td>
             </tr>
         <?php endforeach ?>
